@@ -15,15 +15,15 @@
   <script>
     window.$docsify = {
       // 项目名称
-      name: 'zwx\'s 知识库',
+      name: 'zwx\'s notebook',
       // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
       repo: '',
       // 侧边栏支持，默认加载的是项目根目录下的\_sidebar.md文件
       //loadSidebar: true,
+      // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
+      subMaxLevel: 4,
       // 导航栏支持，默认加载的是项目根目录下的\_navbar.md文件
       loadNavbar: true,
-      // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
-      subMaxLevel: 3,
       //切换页面后是否自动跳转到页面顶部
       auto2top: true,
       // 搜索插件
@@ -43,11 +43,7 @@
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-
   <!--latex-->
   <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
@@ -55,6 +51,23 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!--代码复制-->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 代码块样式优化-->
+  <script src="https://notebook.js.org/plugin/prism-c.js"></script>
+  <script src="https://notebook.js.org/plugin/prism-cpp.js"></script>
+
+  <!-- 回到顶部功能 -->
+  <script src="https://notebook.js.org/plugin/jquery.js"></script>
+  <script src="https://notebook.js.org/plugin/jquery.goup.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 52,
+        locationOffset: 25,
+        titleAsText: true
+      });
+    });
+  </script>
 
 </body>
 

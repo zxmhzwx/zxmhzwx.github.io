@@ -1,4 +1,4 @@
-# Welcome to zwx's notebook！<!-- {docsify-ignore} -->
+# Welcome to zwx's notebook！
 
 ## 编程
 

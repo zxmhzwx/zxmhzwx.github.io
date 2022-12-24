@@ -1,6 +1,6 @@
 # [STL](https://blog.csdn.net/qq_42322103/article/details/99685797?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166625307516782414972127%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166625307516782414972127&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-99685797-null-null.142^v59^control,201^v3^add_ask&utm_term=STL&spm=1018.2226.3001.4187)
 
-# Vectors （向量）
+## Vectors （向量）
 
 ![img](img/STL/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzIyMTAz,size_16,color_FFFFFF,t_70.png)
 
@@ -46,7 +46,7 @@ clear();//删除容器中所有元素
 
 
 
-# deque容器
+## deque
 
 ![在这里插入图片描述](img/STL/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzIyMTAz,size_16,color_FFFFFF,t_70-16697022524103.png)
 
@@ -103,7 +103,7 @@ erase(pos);//删除pos位置的数据，返回下一个数据的位置
 
 ```
 
-# stack容器
+## stack
 
 ![在这里插入图片描述](img/STL/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzIyMTAz,size_16,color_FFFFFF,t_70-16697030512996.png)
 
@@ -128,7 +128,7 @@ empty();//判断堆栈是否为空
 size();//返回堆栈的大小
 ```
 
-# queue容器
+## queue
 
 ![在这里插入图片描述](img/STL/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzIyMTAz,size_16,color_FFFFFF,t_70-16697035447479.png)
 
@@ -162,7 +162,7 @@ size();//返回队列的大小
 原文链接：https://blog.csdn.net/qq_42322103/article/details/99685797
 ```
 
-# list容器
+## list
 
 ![在这里插入图片描述](img/STL/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzIyMTAz,size_16,color_FFFFFF,t_70-166970356509312.png)
 
@@ -324,7 +324,9 @@ STL 从广义上分为: **容器**(container) **算法**(algorithm) **迭代器*
 
 容器和算法之间通过[迭代器](https://so.csdn.net/so/search?q=迭代器&spm=1001.2101.3001.7020)进行无缝连接。STL 几乎所有的代码都采用了模板类或者模板函数，这相比传统的由函数和类组成的库来说提供了更好的代码重用机会。
 
-# STL六大组件
+## STL综述
+
+### 1、STL六大组件
 
 **容器**
 
@@ -348,7 +350,7 @@ STL 从广义上分为: **容器**(container) **算法**(algorithm) **迭代器*
 
 **空间配置器**
 
-# STL的优点
+### 2、STL的优点
 
 - STL 是 C++的一部分，因此不用额外安装什么，它被内建在你的编译器之内。
 - STL 的一个重要特性是将数据和操作分离。数据由容器类别加以管理，操作则由可定制的算法定义。迭代器在两者之间充当“粘合剂”,以使算法可以和容器交互运作
@@ -358,9 +360,7 @@ STL 从广义上分为: **容器**(container) **算法**(algorithm) **迭代器*
   - 高性能：如 map 可以高效地从十万条记录里面查找出指定的记录，因为 map 是采用红黑树的变体实现的。
   - 高移植性：如在项目 A 上用 STL 编写的模块，可以直接移植到项目 B 上。
 
-
-
-# STL容器使用时机
+### 3、STL容器使用时机
 
 | .            | vector   | deque    | list     | set    | multiset | map             | multimap      |
 | ------------ | -------- | -------- | -------- | ------ | -------- | --------------- | ------------- |
@@ -379,7 +379,7 @@ STL 从广义上分为: **容器**(container) **算法**(algorithm) **迭代器*
 - **set的使用场景**：比如对手机游戏的个人得分记录的存储，存储要求从高分到低分的顺序排列。
 - **map的使用场景**：比如按ID号存储十万个用户，想要快速要通过ID查找对应的用户。二叉树的查找效率，这时就体现出来了。如果是vector容器，最坏的情况下可能要遍历完整个容器才能找到该用户。
 
-# 容器
+## 容器
 
 ### C++ Strings(字符串)
 
@@ -459,7 +459,7 @@ C++ Multimaps和[maps](cppmap.html)很相似，但是MultiMaps允许重复的元
 
 
 
-# 算法
+## 算法
 
 算法主要是由头文件`<algorithm> <functional>  <numeric>`组成。
 `<algorithm>`是所有STL头文件中最大的一个,其中常用的功能涉及到比较，交换，查找,遍历，复制，修改，反转，排序，合并等…
@@ -468,7 +468,7 @@ C++ Multimaps和[maps](cppmap.html)很相似，但是MultiMaps允许重复的元
 
 ### 1. 常用遍历算法
 
-##### **遍历，搬运**
+#### **遍历，搬运**
 
 ```c++
 //遍历算法 遍历容器元素
@@ -480,7 +480,7 @@ transform(iterator beg1, iterator end1, iterator beg2, _callbakc)
 
 ### 2. 常用查找算法
 
-##### **查找，条件查找，查找相邻重复，二分查找，统计次数，条件统计次数**
+#### **查找，条件查找，查找相邻重复，二分查找，统计次数，条件统计次数**
 
 ```c++
 //find算法 查找元素
@@ -504,7 +504,7 @@ count_if(iterator beg, iterator end, _callback);
 
 ### 3. 常用排序算法
 
-##### **合并，排序，随机排，反转**
+#### **合并，排序，随机排，反转**
 
 ```c++
 //merge算法 容器元素合并，并存储到另一容器中
@@ -522,7 +522,7 @@ reverse(iterator beg, iterator end);
 
 ### 4. 常用拷贝和替换算法
 
-##### **拷贝，替换，条件替换，交换**
+#### **拷贝，替换，条件替换，交换**
 
 ```c++
 //copy算法 将容器内指定范围的元素拷贝到另一容器中
@@ -540,7 +540,7 @@ swap(container c1, container c2);
 
 ### 5. 常用算数生成算法
 
-##### **总和，添加**
+#### **总和，添加**
 
 ```c++
 //accumulate算法 计算容器元素累计总和
@@ -552,7 +552,7 @@ fill(iterator beg, iterator end, value);
 
 ### 6. 常用集合算法
 
-##### **交集，并集，差集**
+#### **交集，并集，差集**
 
 ```c++
 //set_intersection算法 求两个set集合的交集
